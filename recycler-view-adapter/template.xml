@@ -1,0 +1,32 @@
+<template format="4"
+        revision="1"
+        name="RecyclerViewAdapter"
+        description="Creates a RecyclerViewAdapter with a ViewHolder inner class">
+ 
+    <category value="Other"/>
+ 
+    <parameter id="className"
+        name="Class Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MyRecyclerViewAdapter"
+        help="The name of the adapter class"/>
+		
+    <parameter id="modelClassName"
+        name="Model Class Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="ViewModel"
+        help="The name of the model class"/>
+			
+    <parameter id="layoutResId"
+        name="Layout Resource Id"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="list_item"
+        help="The name of the layout resource id"/>
+ 
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+ 
+</template>
