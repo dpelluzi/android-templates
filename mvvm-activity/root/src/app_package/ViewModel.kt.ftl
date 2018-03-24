@@ -1,4 +1,4 @@
-package ${packageName}.presenter;
+package ${packageName}.viewmodel;
 
 import android.arch.lifecycle.ViewModel
  
